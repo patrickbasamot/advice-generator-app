@@ -1,5 +1,8 @@
  const slipNumber = document.querySelector('.slip-number');
 const adviceContainer = document.querySelector('.advice');
+const nextQuote = document.querySelector('.next-quote');
+
+nextQuote.addEventListener('click',() => fetchAdvice().catch( error => {console.error(error);}));
 
 
 
@@ -20,7 +23,7 @@ async function fetchAdvice(){
 
     console.log(data.slip.advice);
     adviceContainer.innerText = "\""+ advice +"\"";
-    slipNumber.innerText += " #"+data.slip.id;
+    slipNumber.innerText = "Advice"+" #"+data.slip.id;
 }
 
 fetchAdvice().catch( error => {console.error(error);});
