@@ -53,7 +53,7 @@ h3{
 p{
     color: var(--clr-primary-neon);
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.8em;
     letter-spacing: 0.2rem;
 }
 
@@ -99,5 +99,5 @@ button{
 }
 
 button:hover{
-    box-shadow: 0px -5px 3px rgb(2,224,4);
+    box-shadow: 0 0 14px 0px hsl(150, 100%, 66%);
 }
