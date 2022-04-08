@@ -23,7 +23,7 @@ async function fetchAdvice(){
 
     console.log(data.slip.advice);
     adviceContainer.innerText = "\""+ advice +"\"";
-    slipNumber.innerText = "Advice"+" #"+data.slip.id;
+    slipNumber.innerText = "ADVICE"+" #"+data.slip.id;
 }
 
 fetchAdvice().catch( error => {console.error(error);});
