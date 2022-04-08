@@ -85,7 +85,7 @@ p{
     }
 }
 button{
-    margin-top:1em;
+    margin-top:1.5em;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -93,11 +93,13 @@ button{
     left: 0;
     right: 0;
     background-color: var(--clr-primary-neon);
-    padding: 0.7em; 
+    padding: 1em; 
     border-radius: 25px;
     border: 1px solid transparent;
 }
-
+.dice-img{
+    height: 1.4em;
+}
 button:hover{
     box-shadow: 0 0 14px 0px hsl(150, 100%, 66%);
 }
